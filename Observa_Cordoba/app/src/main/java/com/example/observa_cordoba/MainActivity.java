@@ -17,4 +17,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(regitroIntent);
     }
 
+    /*Enlace entre bienvenida y loguin*/
+    public void activity_loguin(View vista){
+        Intent loguinIntent = new Intent(this, Loguin.class);
+        startActivity(loguinIntent);
+        finish();
+    }
+
 }
