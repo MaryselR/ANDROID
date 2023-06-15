@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Observa_Cordoba"
         tools:targetApi="31">
         <activity
+            android:label="Registro Usuario"
+            android:parentActivityName=".MainActivity"
+            android:name=".Registro">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:exported="false"
+            android:value=".MainActivity"/>
+        </activity>
+        <activity
             android:name=".Loguin"
             android:exported="false" />
         <activity
