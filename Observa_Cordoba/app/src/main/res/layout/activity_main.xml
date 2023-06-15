@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    android:visibility="visible"
     tools:context=".MainActivity">
 
     <TextView
@@ -31,17 +32,17 @@
         android:layout_marginTop="650dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#FF9800"
+        android:onClick="activity_registro"
         android:text="Registro"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Login"
+        app:layout_constraintEnd_toStartOf="@+id/loguin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="activity_registro"
-        tools:ignore="OnClick"/>
+        tools:ignore="OnClick" />
 
     <Button
-        android:id="@+id/Login"
+        android:id="@+id/loguin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -49,6 +50,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#FF9800"
+        android:onClick="activity_loguin"
         android:text="Login"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
