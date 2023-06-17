@@ -83,6 +83,7 @@
         app:layout_constraintVertical_bias="0.651" />
 
     <Button
+        android:id="@+id/entrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF9800"
@@ -96,6 +97,7 @@
         app:layout_constraintVertical_bias="0.759" />
 
     <Button
+        android:id="@+id/bienvenida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
