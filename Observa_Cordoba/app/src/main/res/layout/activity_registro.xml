@@ -86,7 +86,7 @@
         app:layout_constraintVertical_bias="0.029" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/inputEmail"
         android:layout_width="210dp"
         android:layout_height="49dp"
         android:layout_marginBottom="288dp"
@@ -109,7 +109,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
         app:layout_constraintVertical_bias="0.104"
         tools:visibility="visible" />
 
@@ -126,7 +126,7 @@
         app:layout_constraintVertical_bias="0.043" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/inputContrasenia"
         android:layout_width="214dp"
         android:layout_height="47dp"
         android:layout_marginBottom="180dp"
