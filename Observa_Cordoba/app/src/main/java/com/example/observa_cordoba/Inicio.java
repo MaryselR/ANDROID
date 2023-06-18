@@ -15,14 +15,14 @@ public class Inicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
 
-        /*Ocultamos la barra de titulo de la app si el video se ve en modo horizontal */
+        /*Ocultamos la barra de titulo de la app si el video se ve en modo horizontal
         int orientacion=getResources().getConfiguration().orientation;
         if(orientacion== Configuration.ORIENTATION_LANDSCAPE){
             getSupportActionBar().hide();
         }
         else{
             getSupportActionBar().show();
-        }
+        }*/
 
         /*Añadimos el video y su controlador*/
         video=findViewById(R.id.video);

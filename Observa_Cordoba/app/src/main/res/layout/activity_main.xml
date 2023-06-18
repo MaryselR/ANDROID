@@ -26,19 +26,20 @@
 
     <Button
         android:id="@+id/registro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="118dp"
+        android:layout_height="51dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="600dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#FF9800"
         android:onClick="activity_registro"
         android:text="Registro"
-        android:textSize="16sp"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/loguin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="OnClick" />
 
     <Button
@@ -46,17 +47,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="600dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#FF9800"
         android:onClick="activity_loguin"
         android:text="Login"
-        android:textSize="16sp"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/registro"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/logoeye"

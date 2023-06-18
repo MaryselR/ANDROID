@@ -73,7 +73,7 @@ public class Loguin extends AppCompatActivity {
 
     /*Enlace entre login y registro*/
     public void activity_registro(View vista) {
-        Intent registroIntent = new Intent(this, Registro.class);
+        Intent registroIntent = new Intent(this, Inicio.class);
         startActivity(registroIntent);
         finish();
     }

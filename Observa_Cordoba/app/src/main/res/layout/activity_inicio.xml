@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FFFFFF"
     android:orientation="vertical"
-    tools:context=".Inicio">
+    tools:context=".Inicio"
+    android:background="@drawable/background"
+    android:id="@+id/inicio">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -27,12 +29,14 @@
         android:background="#F3E7C6"
         android:gravity="center"
         android:text="Este es MiObservador, la aplicación que viene a ayudar a la población de Cordoba Capital con reportes de cualquier Problemática Urbana (cortes de calle, accidentes viales, reparaciones en la via publica, etc). Actualmente contamos con un sistema de Registro e Inicio de Sesion. "
-        app:lineHeight="26dp" />
+        app:lineHeight="26dp"
+        tools:ignore="MissingConstraints" />
 
     <VideoView
         android:id="@+id/video"
         android:layout_width="wrap_content"
         android:layout_height="338dp"
-        android:layout_margin="40dp" />
+        android:layout_margin="40dp"
+        tools:ignore="MissingConstraints" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
