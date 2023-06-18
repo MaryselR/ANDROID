@@ -12,9 +12,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-        public void activity_registro(View vista){
-        Intent regitroIntent = new Intent( this, Registro.class);
-        startActivity(regitroIntent);
+
+    public void activity_registro(View vista) {
+        setup();
+        Intent registroIntent = new Intent(this, Registro.class);
+        startActivity(registroIntent);
     }
 
+    /*Enlace entre bienvenida y loguin*/
+    public void activity_loguin(View vista){
+        Intent loguinIntent = new Intent(this, Loguin.class);
+        startActivity(loguinIntent);
+        finish();
+    }
+
+    private void setup()
+    {
+        setTitle("Autenticación");
+    }
 }
