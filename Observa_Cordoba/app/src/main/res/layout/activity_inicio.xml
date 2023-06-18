@@ -1,42 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inicio"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:context=".Inicio"
     android:background="@drawable/background"
-    android:id="@+id/inicio">
+    android:orientation="vertical"
+    tools:context=".Inicio">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/encabezado"
+        android:layout_width="316dp"
+        android:layout_height="61dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/presentacion"
         android:layout_width="wrap_content"
         android:layout_height="158dp"
-        android:layout_margin="70dp"
-        android:layout_marginTop="30dp"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="8dp"
         android:layout_weight="1"
         android:background="#F3E7C6"
         android:gravity="center"
         android:text="Este es MiObservador, la aplicación que viene a ayudar a la población de Cordoba Capital con reportes de cualquier Problemática Urbana (cortes de calle, accidentes viales, reparaciones en la via publica, etc). Actualmente contamos con un sistema de Registro e Inicio de Sesion. "
+        app:layout_constraintBottom_toTopOf="@+id/video"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario"
         app:lineHeight="26dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
     <VideoView
         android:id="@+id/video"
         android:layout_width="wrap_content"
         android:layout_height="338dp"
-        android:layout_margin="40dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_margin="0dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintTop_toBottomOf="@+id/presentacion"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="212dp"
+        android:layout_height="56dp"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/encabezado"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="61dp"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

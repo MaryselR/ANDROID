@@ -2,10 +2,12 @@ package com.example.observa_cordoba;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 public class Inicio extends AppCompatActivity {
@@ -14,6 +16,10 @@ public class Inicio extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
+        Intent intent = getIntent();
+        String saludo = intent.getStringExtra(Registro.EXTRA_MESSAGE);
+        TextView textView = findViewById(R.id.txtUsuario);
+        textView.setText("Hola "+saludo+"!");
 
         /*Ocultamos la barra de titulo de la app si el video se ve en modo horizontal
         int orientacion=getResources().getConfiguration().orientation;

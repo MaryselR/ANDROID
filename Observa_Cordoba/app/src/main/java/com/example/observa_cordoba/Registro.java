@@ -10,11 +10,13 @@ import android.widget.Toast;
 
 public class Registro extends AppCompatActivity {
 
+    private EditText txtUsuario;
     EditText registroUsuario, registroEmail, registroPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+        txtUsuario = findViewById(R.id.ingresoUsuario);
 
         registroUsuario = findViewById(R.id.ingresoUsuario);
         registroEmail = findViewById(R.id.ingresoEmail);
@@ -27,6 +29,8 @@ public class Registro extends AppCompatActivity {
 
     public void Inicio(View vista) {
         Intent inicioIntent = new Intent(this, Inicio.class);
+        String message = txtUsuario.getText().toString();
+        inicioIntent.putExtra(EXTRA_MESSAGE, message);
         startActivity(inicioIntent);
 
         String userName = registroUsuario.getText().toString().trim();
@@ -34,13 +38,15 @@ public class Registro extends AppCompatActivity {
         String userEmail = registroEmail.getText().toString().trim();
 
         if (userName.isEmpty() || userPassword.isEmpty() || userEmail.isEmpty()) {
-            Toast.makeText(Registro.this, "Ingresar datos requeridos", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Registro.this, "Ingresar datos requeridos", Toast.LENGTH_LONG).show();
         } else {
             nuevoUsuario(userName, userEmail, userPassword);
         }
-
     }
 
+    public static final String EXTRA_MESSAGE =
+            "com.example.android.Observa_Cordoba.Registro.extra.MESSAGE";
+           /* "com.example.android.registroUsuario.extra.MESSAGE";*/
     private void nuevoUsuario(String userName, String userEmail, String userPassword){
 
     }
