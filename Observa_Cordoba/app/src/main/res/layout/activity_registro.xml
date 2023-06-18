@@ -87,9 +87,9 @@
         app:layout_constraintTop_toBottomOf="@+id/nombreUsuario" />
 
     <EditText
-        android:id="@+id/ingresoEmail"
-        android:layout_width="282dp"
-        android:layout_height="46dp"
+        android:id="@+id/inputEmail"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
         android:layout_marginBottom="288dp"
         android:ems="10"
         android:hint="Ingrese su correo electrónico"
@@ -113,8 +113,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ingresoEmail"
-        app:layout_constraintVertical_bias="0.062"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+        app:layout_constraintVertical_bias="0.104"
         tools:visibility="visible" />
 
     <TextView
@@ -131,9 +131,10 @@
         app:layout_constraintVertical_bias="0.055" />
 
     <EditText
-        android:id="@+id/ingresoPassword"
-        android:layout_width="216dp"
-        android:layout_height="46dp"
+        android:id="@+id/inputContrasenia"
+        android:layout_width="214dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="180dp"
         android:ems="10"
         android:hint="Ingrese contraseña"
         android:inputType="textPassword"
