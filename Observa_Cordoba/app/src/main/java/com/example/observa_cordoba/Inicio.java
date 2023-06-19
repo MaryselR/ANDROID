@@ -18,8 +18,8 @@ public class Inicio extends AppCompatActivity {
         setContentView(R.layout.activity_inicio);
         Intent intent = getIntent();
         String saludo = intent.getStringExtra(Registro.EXTRA_MESSAGE);
-        TextView textView = findViewById(R.id.txtUsuario);
-        textView.setText("Hola "+saludo+"!");
+        TextView textViewReg = findViewById(R.id.txtUsuario);
+        textViewReg.setText("Hola "+saludo+"!");
 
         /*Ocultamos la barra de titulo de la app si el video se ve en modo horizontal
         int orientacion=getResources().getConfiguration().orientation;

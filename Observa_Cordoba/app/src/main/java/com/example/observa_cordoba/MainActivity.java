@@ -1,7 +1,10 @@
 package com.example.observa_cordoba;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Activity;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.view.View;
 import android.os.Bundle;
 
@@ -11,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        miObservadorDB dbHelper = new miObservadorDB(this);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
     }
 
     public void activity_registro(View vista) {
@@ -25,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(loguinIntent);
         finish();
     }
+
 
     private void setup()
     {
