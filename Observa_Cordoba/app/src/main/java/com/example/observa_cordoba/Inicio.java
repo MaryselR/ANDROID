@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -37,5 +38,12 @@ public class Inicio extends AppCompatActivity {
         video.setMediaController(mc);
         mc.setAnchorView(video);
         video.start();
+    }
+
+    /*Enlace entre inicio y bievenida*/
+    public void activity_bienvenida(View vista){
+        Intent bievenidaIntent = new Intent(this, MainActivity.class);
+        startActivity(bievenidaIntent);
+        finish();
     }
 }
